@@ -72,4 +72,11 @@ dir("output", pattern = ".csv")
 stream_stop(stream)
 
 #Logging----
+spark_log(sc)
+spark_log(sc, filter = "sparklyr")
+
+#Disconnecting----
+spark_disconnect(sc)
+#for multiple instances
+spark_disconnect_all()
 
